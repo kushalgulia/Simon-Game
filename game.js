@@ -64,8 +64,8 @@ function animatePress(currentColor) {
 //fucntion to check answer and restart game if pattern is different
 //keep listening for clicks and check if it matches the game pattern
 //whenever any click is not same as the game pattern else statment is triggered
-function checkAnswer(currentLevel) {
-  if (userClickedPattern[currentLevel] == gamePattern[currentLevel]) {
+function checkAnswer(patternIndex) {
+  if (userClickedPattern[patternIndex] == gamePattern[patternIndex]) {
     //only goes inside the if when user has clicked all the buttons in correct pattern 
     if (userClickedPattern.length == gamePattern.length) {
       setTimeout(function() {
